@@ -10,8 +10,17 @@
 
 */
 
-const fruits = ['apple', 'banana', 'orange', 45];
+let fruits = ["Banana","Apple","Orange","Lemon","Grape",5];
 
 const firstFruit = fruits[0];
-fruits[3] = 'lemon';
-console.log(firstFruit, fruits);
+fruits[5] = "Mango";
+console.log(firstFruit);
+console.log(fruits);
+
+
+/* 
+let numbers = [3,6,20,14,16,28];
+console.log(numbers)
+numbers[1] +=100
+console.log(numbers);
+ */
