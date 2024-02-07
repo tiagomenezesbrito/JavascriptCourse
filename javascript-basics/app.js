@@ -311,3 +311,185 @@ console.log(myName);
 
 //======================================================================================
 
+//conditional statements
+//comparison operators
+// >, <,>=,<=,==,===,!=,!===
+// if(condition) {code};
+// else and else if  !(check if value is not true)
+//Equality
+
+/* if (3 > 4) {
+    console.log("Its True");
+} else {
+    console.log("its false");
+}
+*/
+
+/* const num1 = 4;
+const num2 = 6;
+const result = num1 >= num2;
+
+if(num1>num2){
+    console.log("First is bigger than second");
+}
+
+else if(result){
+    console.log("First number greater or equal second number");
+} else{
+    console.log("Second is bigger than first");
+}
+ */
+
+
+//! checks the oposite
+/* const value = false;
+
+if (!value) {
+    console.log("Hi");
+} */
+
+
+//======================================================================================
+
+//Equality
+// ==, ===, !=, !--
+//== checks value
+//=== checks value and type
+
+/* 
+const num1 = 3;
+const num2 = 3;
+
+const value = num1 == num2;
+if (value) {
+    console.log("Both numbers are equal")
+}
+
+console.log(value);
+ */
+
+
+//======================================================================================
+
+//Logical Operators
+// (|| - OR), (&& - AND), !(not)
+
+/* const myName = "Peter";
+const age = 24; */
+
+/* if(myName === "Bob" || age === 24) {
+    console.log("Hello bob");
+} else {
+    console.log("Wrong value");
+} */
+
+
+/* if (myName == "Peter" && age === 24) {
+    console.log("Both are good");
+} */
+
+
+//======================================================================================
+
+// Switch
+// Dice values 1 - 6
+
+//const dice = 3;
+
+/* if  (dice === 1) {
+    console.log("You got 1");
+}
+else if (dice === 2) {
+    console.log("You got 2");
+}
+else if (dice === 3) {
+    console.log("You got 3");
+}
+else if (dice === 4) {
+    console.log("You got 4");
+}
+else if (dice === 5) {
+    console.log("You got 5");
+}
+else if (dice === 6){
+    console.log("You got 6");
+}
+else {
+    console.log("This is not a normal value for a dice");
+} */
+
+
+/* switch (dice) {
+    case 1: 
+        console.log("You got 1");
+        break;
+    
+    case 2: 
+        console.log("You got 2");
+        break;
+    
+    case 3: 
+        console.log("You got 3");
+        break;
+    
+    case 4: 
+        console.log("You got 4");
+        break;
+    
+    case 5: 
+        console.log("You got 5");
+        break;
+    
+    case 6: 
+        console.log("You got 6");
+        break;
+    
+    default:
+        console.log("You didin't roll the dice");
+
+} */
+
+
+//======================================================================================
+
+//Loops
+// Repeatedly run a block of code while condition is true
+// while loop ->>>>>>>>>>>>>>>>>>>>>
+
+/* let amount = 10;
+
+while(amount > 0) {
+    console.log("I have" + amount + "Dollars and i'm going to the mall");
+    amount--
+} */
+
+//do while loop ->>>>>>>>>>>>>>>>>>>>>
+//code block first condition second
+
+/* let money = 0;
+
+do{
+    console.log("you have", money);
+    money++;
+}
+while (money < 10) */
+
+
+
+
+//MOST IMPORTAN LOOP
+//for loop ->>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+/* let i;
+for(i = 0; i < 10;i++){
+    console.log("And the number is:"+i)
+}
+ */
+
+let i;
+for(i = 0; i<10; i++) {
+    console.log("Hello guys" + i);
+}
+
+//======================================================================================

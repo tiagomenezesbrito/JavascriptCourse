@@ -11,15 +11,12 @@
 
 */
 
-// function fullName(firstName, lastName) {
-//   const fullName = `${firstName} ${lastName}`;
-//   return fullName.toUpperCase();
-// }
-// console.log(fullName('john', 'smith'));
-
-function fullName({ firstName, lastName }) {
-  const fullName = `${firstName} ${lastName}`;
-  return fullName.toUpperCase();
+/* function fullName(firstName,lastName) {
+  const bigName = firstName+lastName;
+  return bigName.toUpperCase();
 }
 
-console.log(fullName({ lastName: 'jordan', firstName: 'peter' }));
+console.log(fullName("Tiago","Brito"));
+console.log(fullName("Brito","Tiago"));
+ */
+
