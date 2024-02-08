@@ -149,3 +149,68 @@ console.log(age); */
 
 
 //===============================================
+
+//forEach 
+//take each element of an array and pass to a function as an argument
+//Does not return a new Array
+
+/* const fruits = ["Banana","Lemon","Grape","Pineapple","Apple","Orange"];
+console.log(fruits);
+
+function toUpper(string){
+    console.log(string.toUpperCase());
+}
+
+function slicer(string) {
+    console.log(string.slice(0,3));
+    
+}
+
+toUpper("James");
+
+fruits.forEach(toUpper); */
+
+//===============================================
+
+//Map
+//return new array
+//does not change size of original array
+// uses values from original when making a new one.
+
+
+/* const fruits = ["Banana","Apple","Orange"];
+
+function letter3(string) {
+    return string.slice(0,3);
+}
+
+const newFruits = fruits.map(letter3);
+console.log(newFruits);
+
+
+const names = ["Tiago","Lucas","Paulo","Claudino"];
+
+function addLastName(name) {
+    return `${name} BDEK`;
+}
+
+const newNames = names.map(addLastName);
+console.log(newNames);
+console.log(names);
+ */
+
+const people = [
+    {name:"James",Age:25},
+    {name:"Bob",Age:40},
+    {name:"Kelvin",Age:15},
+]
+
+
+const peopleAge = people.map(function(person){
+    return person.Age;
+})
+
+console.log(`The ages from the group of people are: ${peopleAge}`);
+
+
+//===============================================

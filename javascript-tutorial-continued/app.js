@@ -416,9 +416,9 @@ function showPerson(person){
 //map
 //does return a new array
 //does not change size of original array
-// uses values from original
+// uses values from original array when making a new one.
 
-const people = [
+/* const people = [
     {name:"Bob",age:25,position:"Developer"},
     {name:"Charlie",age:28,position:"Developer"},
     {name:"jonathan",age:23,position:"Developer"}
@@ -435,6 +435,116 @@ const names = people.map(function(person){
 })
 
 console.log(names);
+ */
 
 //===================================================================
 
+//Filter
+// does return a new array
+// can manipulate the size of the new array
+// returns based on a condition
+
+/* const people = [
+  { name: "Bob", age: 10, position: "Developer" },
+  { name: "Charlie", age: 14, position: "Developer" },
+  { name: "jonathan", age: 23, position: "Developer" },
+];
+
+function young(person){
+    if(person.age <= 18) {
+        return person.age
+    }
+}
+
+
+const youngPeople = people.filter(young)
+console.log(youngPeople);
+
+
+
+const fruits = ["Banana", "Orange","Apple"];
+
+const newFruits = fruits.filter(function(fruit){
+    return fruit.length <= 5;
+});
+
+console.log(newFruits);
+
+
+
+const listOfNumbers = [3,5,9,12,24,29,33,56,70,89,91,118,140,200,236,1000];
+
+const numbersBellow10 = listOfNumbers.filter(function(number){
+    return number < 10;
+})
+console.log(numbersBellow10);
+
+const evenNumbers = listOfNumbers.filter(function(number){
+    if(number%2===0) {
+        return number;
+    }
+})
+
+console.log(evenNumbers) */
+
+//===================================================================
+
+//find
+// returns single instance - (in this case object)
+// returns first match, if no match undefined
+// great for getting unique value
+
+
+/* const names = ["James","Lincoln","Zohan","Jamal","Jonny"];
+
+const findZohan = names.find(function(name){
+    return name ==="Zohan";
+})
+console.log(findZohan);
+
+
+const people = [
+    {name:"James",age:23,position:"Developer"},
+    {name:"Tiago",age:20,position:"Developer"},
+    {name:"Jamal",age:46,position:"Senior Developer"},
+    {name:"Jones",age:28,position:"Pleno Developer"}
+
+]
+
+
+const youngPeople = people.find(function(people){
+    //return the item if the condition is met
+    return people.age < 25;
+})
+console.log(youngPeople);
+ */
+
+//===================================================================
+
+//reduce
+//iterates, callback function
+// reduces to a single value - number, array, object
+//1 parameter ("acc") - accumulator, total of all calculations
+// 2 parameter ("curr") = current iteration/value
+//You must always return the accumulator!!!
+
+const people = [
+    {name:"Matheus",age:24,position:"developer",id:1,salary:500},
+    {name:"Tiago",age:23,position:"developer",id:2,salary: 2000},
+    {name:"Otávio",age:18,position:"developer",id:3,salary: 3000},
+    {name:"Paulo",age:29,position:"developer",id:4,salary: 1000},
+
+
+
+]
+
+const total = people.reduce(function(acc,currItem){
+    console.log(acc);
+    console.log(currItem)
+    return acc += currItem.salary;
+},0);
+
+console.log(total)
+
+//===================================================================
+//===================================================================
