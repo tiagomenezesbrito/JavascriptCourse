@@ -61,23 +61,68 @@ console.log(updatedStudents); */
 //2. divide by the lenght of the students array
 //3. assign to "averageScore" and log
 
-console.log(students);
-
-/* const averageScore = students.reduce(function(acc,curr){
-  (acc + curr.score)/students.length
-  return acc + curr.score
-},0) */
-
-
 
 //idea
-
-const sum = students.reduce(function(acc,curr){
+/* const sum = students.reduce(function(acc,curr){
   return acc + curr.score;
 },0);
 console.log(sum);
 
 const averageScore = sum/students.length;
-console.log(averageScore)
+console.log(averageScore) */
 
 
+//The way he did:
+/* console.log(students);
+const averageScore = students.reduce(function(totalScore,score){
+
+  return totalScore + score.score;
+
+},0)/students.length;
+console.log(averageScore); */
+
+//=============================================================================
+
+//reduce challenge 2
+
+/* 
+tips:
+
+square bracket notation []
+
+study more later
+
+*/
+
+
+/* 
+Survey
+
+1.List favorite subjects with reduce
+  {
+    english:1,
+    history:1,
+    math: 3
+
+  }
+
+2. assign to survey and log
+
+*/
+
+
+//His aproach
+console.log(students)
+const survey = students.reduce(function(survey,student){
+
+  const favSubject = student.favoriteSubject;
+  if(survey[favSubject]){
+    survey[favSubject]=survey[favSubject]+1;
+  } else{
+    survey[favSubject] = 1;
+  }
+
+  return survey
+},{})
+
+console.log(survey);

@@ -528,7 +528,7 @@ console.log(youngPeople);
 // 2 parameter ("curr") = current iteration/value
 //You must always return the accumulator!!!
 
-const people = [
+/* const people = [
     {name:"Matheus",age:24,position:"developer",id:1,salary:500},
     {name:"Tiago",age:23,position:"developer",id:2,salary: 2000},
     {name:"Otávio",age:18,position:"developer",id:3,salary: 3000},
@@ -545,6 +545,31 @@ const total = people.reduce(function(acc,currItem){
 },0);
 
 console.log(total)
+ */
+
 
 //===================================================================
+
+//Math
+//Standart built-in objects -always available
+
+//Math.floor
+// Math.ceil
+// Math.sqrt()
+// Math.PI
+//Math.max()
+//Math.min()
+
+//Math.random(); -> generates a number between 0 and 9.99999
+
+/* let testRandom =Math.floor(Math.random()*10+1);
+console.log(testRandom); */
+
+
+
+
+
 //===================================================================
+
+// Date
+
