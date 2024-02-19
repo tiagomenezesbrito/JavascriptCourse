@@ -201,7 +201,7 @@ console.log(value.childNodes[0].nodeValue);
 
 */
 
-/* Text Content
+/* Text Content -> can be used to see the text or change the text in the DOM.
 
 const item = document.getElementById("special");
 console.log(item.textContent); 
@@ -214,7 +214,8 @@ console.log(item.textContent);
 //=========================================================================
 
 //getAttribute(); -> can be used to get any Atribute, you just need to specify
-//setAttribute();
+//setAttribute(); -> can be used to set any Atribute, you just need to specify
+//IDEA -> You can have some class prepared, and when the user clicks, you use setAttribute to apply this class and change the Document. 
 
 /* const first = document.querySelector(".first");
 const classValue = first.getAttribute("class");
@@ -238,12 +239,141 @@ const headingId = heading1.getAttribute("id");
 console.log(headingId); */
 
 
+/* const heading = document.querySelector("#special");
+heading.textContent = "This is possible with text content";
+ */
+
+
+
+//=========================================================================
+
+//className -> used to check the class name as well as to change and add new classes. But the main way to use is to just add one class.
+//classList -> used to add more than one class. to add use add()
+
+
+/* const first = document.querySelector("#first");
+const second = document.querySelector("#second");
+const third = document.querySelector("#third"); */
+
+/* console.log(first.className); */
+//console.log(first.setAttribute("class","newColors"))
+
+/* second.className = "newColors text"; */ //Adding more than one class with className. Can use add(), remove() and contain() which is usefull to check if the element contain an especific class.
+
+
+
+
+/* 
+third.classList.add("colors");
+third.classList.add("text");
+third.classList.remove("text");
+
+let result = third.classList.contains("text");
+console.log(result);
+const thirdClassValue = third.classList;
+console.log(thirdClassValue);
+ */
+
+
+//=========================================================================
+
+
+// createElement("element");
+// createTextNode("text content");
+//element.appendChild(childElement)
+
+
+//const result = document.querySelector("#result");
+
+//Create empty element 
+
+//const bodyDiv = document.createElement("div");
+
+//create text Node
+//const text = document.createTextNode("A simple body div");
+
+//Appending
+/* bodyDiv.appendChild(text);
+document.body.appendChild(bodyDiv);
+
+
+
+console.log(result.children);
+
+
+const heading = document.createElement("h1");
+
+const textHeading = document.createTextNode("This is a heading 1");
+ */
+//appending
+
+/* heading.appendChild(textHeading);
+
+heading.classList.add("blue");
+result.appendChild(heading);
+ */
+//=========================================================================
+
+//insertBefore("Element","Location") alternative to appendChild      SEE LATER
+
+
+//=========================================================================
+
+// replaceChild("new","old")
+
+/* const smallHeading = document.createElement("h6");
+const textSmallHeading = document.createTextNode("This is small heading");
+smallHeading.appendChild(textSmallHeading);
+smallHeading.classList.add("blue");
+document.body.appendChild(smallHeading);
+
+
+const bigHeading = document.createElement("h2");
+const bigHeadingText = document.createTextNode("This is a heading 2");
+bigHeading.appendChild(bigHeadingText);
+
+document.body.replaceChild(bigHeading,smallHeading);
+
+bigHeading.classList.add("blue"); */
+
+//=========================================================================
+
+//prepend puts an element before another
+//innerText creates or change the inner text of an element
+
+/* const heading = document.createElement("h2");
+heading.innerText = "I'm a dynamic heading";
+heading.innerText = "I'm a new text";
+
+document.body.prepend(heading) */
+
+
+//=========================================================================
+
+//remove  Removes the element
+//removeChild   Removes a child of an element
+
+//const result = document.getElementById("result");
+//result.remove();
+
+
+//const Heading = result.querySelector("h1");
+
+//result.removeChild(Heading);
+
+
+//=========================================================================
+
+//innerHTML
+//textContent
+
 
 
 
 
 
 //=========================================================================
-//=========================================================================
-//=========================================================================
-//=========================================================================
+
+
+
+
