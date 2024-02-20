@@ -364,9 +364,133 @@ document.body.prepend(heading) */
 
 //=========================================================================
 
-//innerHTML
-//textContent
+//innerHTML      show the whole HTML and can be used to add HTML to an element
+//textContent    show the text of an element and allows you to change the text content of an element
 
+/* const list = document.getElementById("first");
+const div = document.getElementById("second");
+const item = document.querySelector(".item");
+
+console.log(div.textContent);
+console.log(list.innerHTML);
+console.log(list.textContent);
+
+
+const ul = document.createElement("ul");
+ul.innerHTML = ` <li class="item">list item  </li><li>list item  </li> <li class="item">list item  </li><li>list item  </li> `;
+
+document.body.appendChild(ul); */
+
+
+//=========================================================================
+
+//Css property
+// it's better to use class list
+
+
+//const random = document.querySelector(".random");
+
+/* random.style.backgroundColor = "blue";
+random.style.color = "white";
+random.style.fontSize = "3rem";
+random.style.textTransform = "capitalize"; */
+
+//random.classList.add("title");
+
+//=========================================================================
+
+//Principles of events
+
+
+//Select Element
+//addEventListener()
+//what event, what to do  (function or função anônima)
+
+
+//=========================================================================
+
+//click event  allows to make changes after the user clicks an element
+
+/* const btn = document.querySelector(".btn");
+
+btn.addEventListener("click",function(){
+     console.log("hey you clicked me");
+    btn.style.backgroundColor = "blue";
+    btn.style.fontSize = "4rem";
+    btn.textContent = "You clicked me :)";
+    btn.classList.add("new-btn");
+})
+
+ */
+
+//=========================================================================
+
+//function reference
+
+
+
+/* 
+const btn = document.querySelector(".btn");
+const heading = document.querySelector("h2");
+ */
+
+/* 
+function changeColors() {
+   let hasClass = heading.classList.contains("red");
+
+    if(hasClass){
+        heading.classList.remove("red");
+    }
+    else{
+        heading.classList.add("red");
+    }
+}
+
+
+
+
+btn.addEventListener("click", changeColors); */ //you don't want to invoke the function right away: changeColors()
+
+/* function textBig(){
+    let textSize = btn.classList.contains("textBig");
+
+    if (textSize){
+        btn.classList.remove("textBig");
+    }
+    else{
+        btn.classList.add("textBig")
+    }
+
+
+
+}
+
+
+
+btn.addEventListener("click",textBig); */
+
+//=========================================================================
+
+//Mouse events
+
+//click- fires after full action occurs
+
+//mousedown - button is pressed
+//mouseup - button is released
+//mouseenter - moved onto an element
+//mouseleave - moved out of an element
+
+
+/* const btn = document.querySelector(".btn");
+
+function sizeUp() {
+    btn.classList.add("textBig");
+}
+
+btn.addEventListener("mouseenter",sizeUp);
+btn.addEventListener("mouseleave",function(){
+    btn.classList.remove("textBig");
+}); */
 
 
 
@@ -374,6 +498,25 @@ document.body.prepend(heading) */
 
 //=========================================================================
 
+//key events
+
+//keypress - when key is pressed
+//kewdown - when key is down
+//keyup - when key is released
+
+//value -
 
 
 
+//=========================================================================
+
+//Event object
+//info about triggered evnet
+//event.type
+//event.currentTarget
+// this keyword
+//preventDefault() - prevents default behaviour
+
+
+
+//=========================================================================
