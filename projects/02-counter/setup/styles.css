@@ -157,6 +157,11 @@ Counter
 ===============
 */
 
+h2{
+  font-size: 50px;
+}
+
+
 main {
   min-height: 100vh;
   display: grid;
@@ -188,3 +193,5 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+
+
