@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- FONT AWESOME LINK -->
+    <script src="https://kit.fontawesome.com/07c6e88258.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    
+    <!-- Div center -->
+    <div class="div-center">
+        <div class="title-container">
+            <h1>Rock Paper Scissors</h1>   
+            <h2>Chose your weapon!!!</h2> 
+        </div>
+
+
+        
+        <!-- ICONS CONTAINER -->
+        <div class="icons-container">
+            <!-- rock icon -->
+            <div class="icon-container">
+                <i class="fa-solid fa-hand-back-fist icon rock"></i>
+            </div>
+            <!-- paper icon -->
+            <div class="icon-container">
+                <i class="fa-solid fa-hand icon paper"></i>
+            </div>
+            <!-- Scissors icon -->
+            <div class="icon-container">
+                <i class="fa-solid fa-hand-scissors icon scissors"></i>
+            </div>
+        </div>
+        <!-- ICONS CONTAINER END -->
+
+
+        <!-- Score Container -->
+        <div class="score-container">
+
+            <!-- player container -->
+            <div class="player-container">
+            <h3>Player</h3> 
+            <span class="player-score">0</span>
+            </div>
+
+            <!-- Computer Container -->
+            <div class="computer-container">
+                <h3>Computer</h3>
+                <span class="computer-score">0</span>
+            </div>
+            
+            
+        </div>
+        <!-- Score Container end -->
+
+        <!-- Result container -->   
+        <div class="result-container">
+            <p id="result">you win! computer picked: paper</p>
+        </div>
+        <!-- Result container end -->
+
+        <!-- Reset button -->
+        <button class="reset-btn">Reset</button>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
